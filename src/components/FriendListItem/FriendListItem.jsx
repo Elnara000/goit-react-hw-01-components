@@ -2,11 +2,7 @@ import PropTypes from 'prop-types';
 import css from './FriendListItem.module.css';
 import defaultImage from '../Profile/default.jpg';
 
-export default function FriendListItem({
-  avatar = defaultImage,
-  name,
-  isOnline,
-}) {
+export function FriendListItem({ avatar = defaultImage, name, isOnline }) {
   return (
     <li className={css.item}>
       <span className={`${css.status} ${css[isOnline]}`}>{isOnline}</span>
