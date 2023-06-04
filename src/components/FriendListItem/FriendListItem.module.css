@@ -1,0 +1,36 @@
+.item{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    box-shadow: 0.4px 0.4px 0.4px 0.4px #bab6b6;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+
+.avatar {
+    margin-right: 10px;
+}
+
+.name {
+    font-weight: 500;
+    font-size: normal;
+    color: rgb(24, 23, 28);
+}
+
+.status {
+    background-color: #170e0e;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.true {
+    background-color: #29c518;
+}
+
+.false {
+    background-color: #d30b0b;
+}

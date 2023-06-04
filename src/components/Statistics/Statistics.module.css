@@ -1,0 +1,41 @@
+.statistics {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    width: 250px;
+    background-color: #fff;
+}
+
+.title {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    color: #9a9898;
+    font-weight: 400;
+    font-size: large;
+}
+
+.stat_list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.item {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.item:nth-child(even) {
+    background-color: blueviolet;
+}
+
+.item:nth-child(odd) {
+    background-color: hotpink;
+}
