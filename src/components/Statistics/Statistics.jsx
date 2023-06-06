@@ -4,7 +4,7 @@ import css from './Statistics.module.css';
 export default function Statistics({ title, stats }) {
   return (
     <section className={css.statistics}>
-      <h2 className={css.title}>{title}</h2>
+      {title && <h2 className={css.title}>{title}</h2>}
       <ul className={css.stat_list}>
         <li className={css.item}>
           <span className={css.label}>{stats[0].label}</span>
@@ -30,4 +30,11 @@ export default function Statistics({ title, stats }) {
 Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(PropTypes.object),
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      label: PropTypes.string,
+      percentage: PropTypes.number,
+    })
+  ),
 };
